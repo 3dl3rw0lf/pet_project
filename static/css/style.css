@@ -59,7 +59,7 @@ form input, form button {
 }
 
 /* Estilos de carrusel */
-.carousel {
+/* .carousel {
     display: flex;
     overflow-x: scroll;
     padding: 10px;
@@ -80,7 +80,7 @@ form input, form button {
     background-color: #f9f9f9;
     text-align: center;
 }
-
+ */
 /* Estilos responsivos */
 @media (min-width: 1024px) {
     /* PC */
