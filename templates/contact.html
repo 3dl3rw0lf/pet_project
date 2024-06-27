@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang="es-419">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportar Mascota Perdida</title>
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="/index.html">Inicio</a>
-            <a href="contact.html">Contacto</a>
-            <a href="lost_pets.html">Mascotas Perdidas</a>
-            <a href="pets_found.html">Mascotas Encontradas</a>
-        </nav>
-    </header>
+    <header id="header"></header>
     <main>
-
+        <form id="contactForm">
+            <h1>Formulario de Contacto</h1>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="petName">Nombre de la Mascota:</label>
+            <input type="text" id="petName" name="petName" required>
+            
+            <label for="petImage">Imagen de la Mascota:</label>
+            <input type="file" id="petImage" name="petImage" accept="image/*" required>
+            
+            <label for="location">Zona donde se perdió:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
     </main>
     <footer>
-
+        <p>&copy; 2024 Nuestro Sitio Web</p>
     </footer>
+    <script type="module" src="../main.js"></script>
+    <script src="../script/validation.js" defer></script>
 </body>
-
 </html>
